@@ -2,6 +2,8 @@
 
 InfraPilot is an AI-assisted cloud architecture and Terraform generation system. It takes a natural-language infrastructure prompt, runs it through a multi-stage agent workflow, returns a service blueprint, generates Terraform, and lets users export the result as a downloadable ZIP package.
 
+![](./images//1.png)
+
 ## What it does
 
 - Converts infrastructure requirements into a structured architecture plan
@@ -56,6 +58,7 @@ InfraPilot is an AI-assisted cloud architecture and Terraform generation system.
 - Research note surfacing in the UI
 - Downloadable ZIP packaging for generated infrastructure
 
+![](./images//2.png)
 ## Documentation
 
 - Backend documentation: `backend/README.md`
