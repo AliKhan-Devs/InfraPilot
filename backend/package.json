@@ -1,0 +1,34 @@
+{
+  "name": "archai-api",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Ali Khan",
+  "type": "module",
+  "main": "src/server.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --watch src --exec ts-node src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@langchain/community": "^1.1.24",
+    "@langchain/core": "^1.1.34",
+    "@langchain/google-genai": "^2.1.26",
+    "@langchain/langgraph": "^1.2.3",
+    "@langchain/tavily": "^1.2.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jszip": "^3.10.1",
+    "socket.io": "^4.8.3",
+    "typescript": "^5.9.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.0",
+    "ts-node": "^10.9.2"
+  }
+}
