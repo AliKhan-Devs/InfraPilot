@@ -30,7 +30,7 @@ Writing Terraform for AWS requires knowing resource names, provider versions, wh
 
 ## 📺 Demo
 
-> 🎬 **[Watch the full walkthrough on LinkedIn](https://www.linkedin.com/in/alikhan-devs/)** — covers the complete flow from natural language prompt to downloadable Terraform bundle, with live node tracking and the ReactFlow architecture diagram.
+> 🎬 **[Watch the full walkthrough on LinkedIn](https://www.linkedin.com/posts/alikhan-devs_opentowork-backendengineering-ai-ugcPost-7441825171897950208-LTCm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFAzhGYB1ErGHnM-T8Ma5tdEpEkc07cH6nQ)** — covers the complete flow from natural language prompt to downloadable Terraform bundle, with live node tracking and the ReactFlow architecture diagram.
 
 <div align="center">
 
