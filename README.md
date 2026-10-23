@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧭 InfraPilot
+# InfraPilot
 
 ### AI-Powered Cloud Infrastructure Generator
 
@@ -20,7 +20,7 @@
 
 ---
 
-## 🧠 The Problem
+## The Problem
 
 Writing Terraform for AWS requires knowing resource names, provider versions, which arguments are deprecated, and how services fit together. A developer who knows *what* they want to build often spends hours translating that intent into valid infrastructure-as-code.
 
@@ -28,9 +28,9 @@ Writing Terraform for AWS requires knowing resource names, provider versions, wh
 
 ---
 
-## 📺 Demo
+## Demo
 
-> 🎬 **[Watch the full walkthrough on LinkedIn](https://www.linkedin.com/posts/alikhan-devs_opentowork-backendengineering-ai-ugcPost-7441825171897950208-LTCm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFAzhGYB1ErGHnM-T8Ma5tdEpEkc07cH6nQ)** — covers the complete flow from natural language prompt to downloadable Terraform bundle, with live node tracking and the ReactFlow architecture diagram.
+> **[Watch the full walkthrough on LinkedIn](https://www.linkedin.com/posts/alikhan-devs_opentowork-backendengineering-ai-ugcPost-7441825171897950208-LTCm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFAzhGYB1ErGHnM-T8Ma5tdEpEkc07cH6nQ)** — covers the complete flow from natural language prompt to downloadable Terraform bundle, with live node tracking and the ReactFlow architecture diagram.
 
 <div align="center">
 
@@ -42,7 +42,7 @@ Writing Terraform for AWS requires knowing resource names, provider versions, wh
 
 ---
 
-## ⚙️ The 4-Node Agent Pipeline
+## The 4-Node Agent Pipeline
 
 InfraPilot runs your prompt through a **LangGraph `StateGraph`** — a stateful pipeline where each node has one focused job, and shared state (`messages`, `blueprint`, `generatedCode`, `errors`) flows through every node automatically.
 
@@ -117,7 +117,7 @@ Each node is given a single, focused role with a targeted system prompt. The `ar
 
 ---
 
-## 🔴 Real-Time Node Tracking
+## Real-Time Node Tracking
 
 Every node fires a Socket.IO event the moment it starts:
 
@@ -136,7 +136,7 @@ The frontend listens to these `node_start` events via Socket.IO client and highl
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---|---|
@@ -152,7 +152,7 @@ The frontend listens to these `node_start` events via Socket.IO client and highl
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology | Details |
 |---|---|---|
@@ -168,7 +168,7 @@ The frontend listens to these `node_start` events via Socket.IO client and highl
 
 ---
 
-## 📡 API Reference
+## API Reference
 
 ### `POST /api/v1/architect`
 Triggers the full 4-node pipeline.
@@ -208,7 +208,7 @@ Packages Terraform output into a downloadable ZIP.
 
 ---
 
-## ⚙️ Local Setup
+## Local Setup
 
 ### Prerequisites
 - Node.js v18+
@@ -256,7 +256,7 @@ npm run dev
 
 ---
 
-## 🚀 Usage
+## Usage
 
 1. Open `http://localhost:5173`
 2. Enter your infrastructure requirement:
@@ -275,7 +275,7 @@ npm run dev
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 InfraPilot/
@@ -313,7 +313,7 @@ InfraPilot/
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
 - [ ] **Multi-cloud support** — Azure and GCP Terraform providers
 - [ ] **Terraform module library** — Reusable modules for common patterns (VPC, ECS cluster, RDS)
@@ -325,7 +325,7 @@ InfraPilot/
 
 ---
 
-## 🔐 Security Notes
+## Security Notes
 
 - All API keys stored in `.env` only — never committed (`.gitignore` covers this)
 - InfraPilot generates code only — it never provisions resources itself
@@ -333,7 +333,7 @@ InfraPilot/
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Ali Khan** — Backend Engineer | AI Systems | AWS | Node.js
 
